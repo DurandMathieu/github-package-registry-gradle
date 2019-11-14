@@ -12,8 +12,6 @@ jobs:
       - uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: test
-        run: ./gpr-example/gradlew check
       - name: build
         run: ./gpr-example/gradlew build
       - name: publish
