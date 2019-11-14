@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.wilmol'
-version '1.0.2'
+version '1.0.4'
 
 sourceCompatibility = 1.8
 
@@ -12,7 +12,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/matdurand/github-package-registry-gradle")
+            url = uri("https://maven.pkg.github.com/DurandMathieu/github-package-registry-gradle")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("GPR_USER")
                 password = project.findProperty("gpr.key") ?: System.getenv("GPR_TOKEN")
