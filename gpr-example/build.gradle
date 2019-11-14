@@ -15,7 +15,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/matdurand/github-package-registry-gradle")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("GPR_USER")
-                password = project.findProperty("gpr.key") ?: System.getenv("GPR_API_KEY")
+                password = project.findProperty("gpr.key") ?: System.getenv("GPR_TOKEN")
             }
         }
     }
